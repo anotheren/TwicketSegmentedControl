@@ -9,10 +9,12 @@
 import UIKit
 
 public protocol TwicketSegmentedControlDelegate: class {
+    
     func segmentedControl(_ segmentedControl: TwicketSegmentedControl, didSelectItemAt index: Int)
 }
 
 open class TwicketSegmentedControl: UIControl {
+    
     open static let height: CGFloat = Constants.height + Constants.topBottomMargin * 2
 
     private struct Constants {

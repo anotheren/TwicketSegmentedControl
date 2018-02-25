@@ -9,6 +9,7 @@
 import UIKit
 
 struct Palette {
+    
     static let defaultTextColor = Palette.colorFromRGB(9, green: 26, blue: 51, alpha: 0.4)
     static let highlightTextColor = UIColor.white
     static let segmentedControlBackgroundColor = Palette.colorFromRGB(237, green: 242, blue: 247, alpha: 0.7)
@@ -24,5 +25,4 @@ struct Palette {
         let blue = amount(blue, with: alpha)/255
         return UIColor(red: red, green: green, blue: blue, alpha: 1)
     }
-    
 }
